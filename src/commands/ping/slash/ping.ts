@@ -3,6 +3,7 @@ import { Command } from '@sapphire/framework';
 import type { ChatInputCommandInteraction } from 'discord.js';
 import { PingLogic } from '../../../lib/commands/ping/logic';
 import type { PingResult } from '../../../lib/commands/ping/types';
+import { getUserLanguage } from '../../../lib/utils/user';
 
 @ApplyOptions<Command.Options>({
   name: 'ping',
@@ -31,8 +32,8 @@ export class PingSlashCommand extends Command {
       timestamp: Date.now()
     };
 
-    // Get user language from guild settings or default
-    const language = 'en-US'; // TODO: Get from database
+    // Get user language from database
+    const language = await getUserLanguage(interaction.user.id);
 
     const content = PingLogic.formatResponse(result, language);
     const statusEmoji = PingLogic.getStatusEmoji(result.latency);
