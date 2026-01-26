@@ -41,6 +41,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@sapphire/decorators": "^6.2.0",
     "@sapphire/framework": "^5.5.0",
     "@sapphire/plugin-hmr": "^3.0.2",
     "@sapphire/plugin-i18next": "^8.0.0",
