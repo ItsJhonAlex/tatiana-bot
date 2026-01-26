@@ -2,7 +2,7 @@ import { Precondition } from '@sapphire/framework';
 import type { CommandInteraction, ContextMenuCommandInteraction, Message } from 'discord.js';
 import { isServerOwner } from '../lib/utils/permissions';
 
-export class ServerOwnerOnlyPrecondition extends Precondition {
+export class ServerOwnerOnly extends Precondition {
   public override async messageRun(message: Message) {
     if (!message.guild) {
       return this.error({ message: 'This command can only be used in a server.' });

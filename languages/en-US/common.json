@@ -13,5 +13,13 @@
   "errors": {
     "unknown": "An unknown error occurred",
     "no_permission": "You don't have permission to use this command"
+  },
+  "commands": {
+    "language": {
+      "description": "Configure the server language",
+      "option_language": "The language to set for this server",
+      "success": "Server language updated to {{language}}!",
+      "error": "Failed to update server language. Please try again."
+    }
   }
 }

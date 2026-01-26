@@ -2,7 +2,7 @@ import { Precondition } from '@sapphire/framework';
 import type { CommandInteraction, ContextMenuCommandInteraction, Message } from 'discord.js';
 import { isBotOwner } from '../lib/utils/permissions';
 
-export class OwnerOnlyPrecondition extends Precondition {
+export class OwnerOnly extends Precondition {
   public override async messageRun(message: Message) {
     return isBotOwner(message.author.id)
       ? this.ok()
