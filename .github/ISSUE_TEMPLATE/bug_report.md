@@ -1,38 +1,46 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: Bug Report
+about: Report a bug or issue with Tatiana Bot
+title: '[BUG] '
+labels: 'bug'
 assignees: ''
 
 ---
 
-**Describe the bug**
+## Bug Description
 A clear and concise description of what the bug is.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+## Steps to Reproduce
+1. Execute command: `/example`
+2. With parameters: `...`
+3. See error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Expected Behavior
+What you expected to happen.
 
-**Screenshots**
+## Actual Behavior
+What actually happened.
+
+## Error Message/Logs
+```
+Paste any error messages or relevant logs here
+```
+
+## Environment
+- **Bot Version:** [e.g. 0.0.1]
+- **Discord.js Version:** [e.g. 14.25.1]
+- **Node/Bun Version:** [e.g. Bun 1.3.6]
+- **OS:** [e.g. Ubuntu 22.04, Windows 11]
+- **Database:** [e.g. PostgreSQL 16]
+
+## Discord Information
+- **Server ID:** [if applicable]
+- **Channel Type:** [e.g. text, voice, DM]
+- **User Permissions:** [e.g. Administrator, Manage Server]
+- **Bot Permissions:** [e.g. Send Messages, Embed Links]
+
+## Screenshots
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+## Additional Context
+Add any other context about the problem here (recent changes, related issues, etc.).
