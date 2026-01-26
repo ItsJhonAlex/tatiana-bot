@@ -10,6 +10,7 @@
         "@sapphire/plugin-hmr": "^3.0.2",
         "@sapphire/plugin-i18next": "^8.0.0",
         "@sapphire/plugin-logger": "^4.1.0",
+        "@sapphire/plugin-subcommands": "^7.0.1",
         "discord.js": "^14.25.1",
         "dotenv": "^17.2.3",
         "drizzle-orm": "^0.45.1",
@@ -152,6 +153,8 @@
     "@sapphire/plugin-i18next": ["@sapphire/plugin-i18next@8.0.0", "", { "dependencies": { "@sapphire/utilities": "^3.18.2", "@skyra/i18next-backend": "^2.0.5", "chokidar": "^4.0.3", "i18next": "^25.1.2" } }, "sha512-oZoQQGqcFLmPHFQ470lOG2tankvNyxaDP1SRBgdVzO+1PKUcs7oC23DWsA0zJiP/XsVe9Q12qSObAwpobANc3Q=="],
 
     "@sapphire/plugin-logger": ["@sapphire/plugin-logger@4.1.0", "", { "dependencies": { "@sapphire/timestamp": "^1.0.5", "colorette": "^2.0.20" } }, "sha512-+vLTITQw3DI8+kfDPNJ0yhIK/LrfM/Gro/UFcxgYWLLm+lwNmSpLZxdWe9v7ESXprody7rTp8JXPNBK7UWyE8w=="],
+
+    "@sapphire/plugin-subcommands": ["@sapphire/plugin-subcommands@7.0.1", "", { "dependencies": { "@sapphire/utilities": "^3.18.0" } }, "sha512-3ngUpfKfcMX4zIlJ4SHLe10N79XU72H+Wdfcnd9ueMf6FOSMJFvVUfqDIp1rb7/iXi7C5dfx0pQqSwqu3UG0KQ=="],
 
     "@sapphire/ratelimits": ["@sapphire/ratelimits@2.4.11", "", {}, "sha512-O6FNA/P0wxU4Ve9gxL948CoZw7+sSpujyUR2CLyLLCNuNvuFGFxPCJVl5crFVLXMIyBIrc2qk+/H9bsqsyQK1Q=="],
 

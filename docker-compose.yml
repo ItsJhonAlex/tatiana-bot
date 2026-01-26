@@ -13,11 +13,11 @@ services:
       POSTGRES_DB: ${DB_NAME:-tatiana_bot}
       PGDATA: /var/lib/postgresql/data/pgdata
     ports:
-      - "${DB_PORT:-5432}:5432"
+      - '${DB_PORT:-5432}:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres}"]
+      test: ['CMD-SHELL', 'pg_isready -U ${DB_USER:-postgres}']
       interval: 10s
       timeout: 5s
       retries: 5

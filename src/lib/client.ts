@@ -6,6 +6,7 @@ import { config } from './config';
 import '@sapphire/plugin-hmr/register';
 import '@sapphire/plugin-i18next/register';
 import '@sapphire/plugin-logger/register';
+import '@sapphire/plugin-subcommands/register';
 
 // Initialize database connection
 import './db';

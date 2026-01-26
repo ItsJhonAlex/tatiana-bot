@@ -33,22 +33,26 @@ Before you begin, ensure you have installed:
 ### Option 1: Development with Docker (Recommended)
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/ItsJhonAlex/tatiana-bot.git
    cd tatiana-bot
    ```
 
 2. **Install dependencies**
+
    ```bash
    bun install
    ```
 
 3. **Set up environment variables**
+
    ```bash
    cp .env.example .env
    ```
-   
+
    Edit `.env` and fill in your Discord bot token:
+
    ```env
    DISCORD_BOT_TOKEN=your_bot_token_here
    DISCORD_CLIENT_ID=your_client_id_here
@@ -56,11 +60,13 @@ Before you begin, ensure you have installed:
    ```
 
 4. **Start PostgreSQL with Docker**
+
    ```bash
    bun run docker:dev:up
    ```
 
 5. **Set up the database schema**
+
    ```bash
    bun run db:push
    ```
@@ -73,8 +79,8 @@ Before you begin, ensure you have installed:
 ### Option 2: Local PostgreSQL
 
 1. **Install PostgreSQL** (if not already installed)
-   
 2. **Create database**
+
    ```sql
    CREATE DATABASE tatiana_bot;
    ```
@@ -86,6 +92,7 @@ Before you begin, ensure you have installed:
 ## 🚀 Usage
 
 ### Development Mode
+
 ```bash
 # Start PostgreSQL (if using Docker)
 bun run docker:dev:up
@@ -95,6 +102,7 @@ bun run dev
 ```
 
 ### Production with Docker
+
 ```bash
 # Build and start all services (database + bot)
 bun run docker:build
@@ -105,6 +113,7 @@ bun run docker:logs
 ```
 
 ### Database Management
+
 ```bash
 # Push schema changes to database
 bun run db:push
@@ -117,6 +126,7 @@ bun run docker:dev:down
 ```
 
 ### Docker Commands
+
 ```bash
 # Development (PostgreSQL only)
 bun run docker:dev:up      # Start database
@@ -131,6 +141,7 @@ bun run docker:logs        # View bot logs
 ```
 
 ### Code Quality
+
 ```bash
 # Run linter
 bun run lint
@@ -165,22 +176,26 @@ tatiana-bot/
 ## 🔧 Configuration
 
 ### Sapphire Framework
+
 Configuration is in [`.sapphirerc.yml`](.sapphirerc.yml). Customize:
+
 - Base directory
 - Command/listener locations
 - Custom file templates
 
 ### Environment Variables
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `DISCORD_BOT_TOKEN` | Your Discord bot token | ✅ |
-| `DATABASE_URL` | PostgreSQL connection string | ✅ |
+
+| Variable            | Description                  | Required |
+| ------------------- | ---------------------------- | -------- |
+| `DISCORD_BOT_TOKEN` | Your Discord bot token       | ✅       |
+| `DATABASE_URL`      | PostgreSQL connection string | ✅       |
 
 ## 📚 Commands
 
 > Commands are located in [`src/commands/`](src/commands/)
 
 To create a new command:
+
 ```bash
 # Use Sapphire CLI (if installed globally)
 sapphire generate command <name>
@@ -189,7 +204,9 @@ sapphire generate command <name>
 ## 🎨 Development
 
 ### Adding a Command
+
 Create a file in `src/commands/`:
+
 ```typescript
 import { Command } from '@sapphire/framework';
 
@@ -216,7 +233,9 @@ export class PingCommand extends Command {
 ```
 
 ### Adding a Listener
+
 Create a file in `src/listeners/`:
+
 ```typescript
 import { Listener } from '@sapphire/framework';
 
@@ -246,6 +265,7 @@ Contributions are welcome! Please follow these steps:
 5. Open a Pull Request
 
 ### Code Standards
+
 - Follow ESLint rules
 - Use Prettier for formatting
 - Write TypeScript with strict mode
