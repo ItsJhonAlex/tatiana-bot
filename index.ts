@@ -1,23 +1,14 @@
-import { SapphireClient } from '@sapphire/framework';
-import { GatewayIntentBits } from 'discord.js';
-import 'dotenv/config';
+import { client } from './src/lib/client';
+import { config } from './src/lib/config';
 
-//Plugin sapphire framework
-import '@sapphire/plugin-hmr/register';
-import '@sapphire/plugin-i18next/register';
-import '@sapphire/plugin-logger/register';
-
-// Initialize database connection
-import './src/lib/db';
-
-const client = new SapphireClient({
-  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
-});
-
-const token = process.env.DISCORD_BOT_TOKEN;
-
-if (!token) {
-  throw new Error('DISCORD_BOT_TOKEN is not set in environment variables');
+async function main() {
+  try {
+    client.logger.info('Starting Tatiana Bot...');
+    await client.login(config.discord.token);
+  } catch (error) {
+    client.logger.fatal('Failed to start bot:', error);
+    process.exit(1);
+  }
 }
 
-client.login(token);
+main();

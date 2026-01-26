@@ -1,0 +1,17 @@
+{
+  "bot": {
+    "ready": "¡Bot está listo!",
+    "starting": "Iniciando Tatiana Bot..."
+  },
+  "guild": {
+    "joined": "¡Gracias por invitarme a tu servidor!",
+    "left": "¡Adiós!",
+    "registered": "Nuevo servidor registrado: {{name}}",
+    "updated": "Nombre del servidor actualizado: {{name}}",
+    "sync_complete": "Sincronización completada: {{new}} nuevos, {{existing}} existentes"
+  },
+  "errors": {
+    "unknown": "Ocurrió un error desconocido",
+    "no_permission": "No tienes permiso para usar este comando"
+  }
+}

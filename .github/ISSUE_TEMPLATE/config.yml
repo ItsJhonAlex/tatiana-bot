@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 💬 Discord Support
+  - name: '💬 Discord Support'
     url: https://discord.gg/kEgEJJufHW
     about: Get help from the community
-  - name: 📚 Documentation
+  - name: '📚 Documentation'
     url: https://github.com/ItsJhonAlex/tatiana-bot#readme
     about: Read the bot documentation
-  - name: ❓ Discussions
+  - name: '❓ Discussions'
     url: https://github.com/ItsJhonAlex/tatiana-bot/discussions
     about: Ask questions and discuss ideas
