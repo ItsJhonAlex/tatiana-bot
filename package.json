@@ -12,8 +12,12 @@
   "scripts": {
     "dev": "bun --watch index.ts",
     "start": "bun index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
+    "db:check": "drizzle-kit check",
+    "db:drop": "drizzle-kit drop",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write \"**/*.{ts,json,yml,yaml,md}\"",
