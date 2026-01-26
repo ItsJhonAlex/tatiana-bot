@@ -13,13 +13,29 @@
     "dev": "bun --watch index.ts",
     "start": "bun index.ts",
     "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{ts,json,yml,yaml,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,json,yml,yaml,md}\"",
+    "docker:dev:up": "docker compose -f docker-compose.dev.yml up -d",
+    "docker:dev:down": "docker compose -f docker-compose.dev.yml down",
+    "docker:dev:logs": "docker compose -f docker-compose.dev.yml logs -f",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:build": "docker compose build",
+    "docker:logs": "docker compose logs -f bot"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/pg": "^8.16.0",
+    "@typescript-eslint/eslint-plugin": "^8.53.1",
+    "@typescript-eslint/parser": "^8.53.1",
     "drizzle-kit": "^0.31.8",
-    "tsx": "^4.21.0"
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript-eslint": "^8.53.1"
   },
   "peerDependencies": {
     "typescript": "^5"

@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# Lock files
+bun.lock
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.*
+
+# Git
+.git/
+
+# Documentation
+docs/

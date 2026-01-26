@@ -1,0 +1,39 @@
+{
+  "json.validate.enable": true,
+  "files.associations": {
+    "bun.lock": "jsonc"
+  },
+  "json.schemas": [],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.git": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bun.lock": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true
+  },
+  "eslint.validate": ["typescript", "javascript"],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

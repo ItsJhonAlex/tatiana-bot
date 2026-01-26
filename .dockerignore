@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+
+# Dependencies
+node_modules
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+
+# Docs
+docs
+README.md
+
+# Development files
+docker-compose.dev.yml
+.editorconfig
+.prettierrc
+.prettierignore
+eslint.config.js
+tsconfig.json
+
+# Database
+postgres_data
+*.db
+*.sqlite
