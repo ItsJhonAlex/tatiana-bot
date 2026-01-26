@@ -41,3 +41,6 @@ drizzle/
 # Docker volumes
 postgres_data/
 postgres_dev_data/
+
+# mcp
+.vscode/mcp.json

@@ -5,8 +5,8 @@ import { pgTable, varchar, timestamp, boolean } from 'drizzle-orm/pg-core';
  */
 export const users = pgTable('users', {
   id: varchar('id', { length: 20 }).primaryKey(), // Discord user ID
-  username: varchar('username', { length: 32 }).notNull(),
-  discriminator: varchar('discriminator', { length: 4 }),
+  username: varchar('username', { length: 32 }).notNull(), // New unique username system
+  globalName: varchar('global_name', { length: 32 }), // Display name (can be different from username)
   avatar: varchar('avatar', { length: 100 }),
   bot: boolean('bot').default(false),
   language: varchar('language', { length: 10 }).default('en-US'),
