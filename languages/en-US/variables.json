@@ -1,0 +1,31 @@
+{
+  "name": "variables",
+  "description": "Show all available variables for custom messages",
+  "option_preview": "Show a preview with your current data",
+  "title": "📝 Available Variables",
+  "example_title": "💡 Example",
+  "preview_title": "🔍 Preview",
+  "footer": "Use these variables in welcome messages, farewell messages, and custom embeds",
+  "categories": {
+    "user": "**User Variables:**",
+    "member": "**Member Variables:**",
+    "server": "**Server Variables:**"
+  },
+  "list": {
+    "user_mention": "`{user}` - Mentions the user",
+    "user_name": "`{user.name}` - User display name",
+    "user_username": "`{user.username}` - Username",
+    "user_tag": "`{user.tag}` - User tag (username#0000)",
+    "user_id": "`{user.id}` - User ID",
+    "user_avatar": "`{user.avatar}` - User avatar URL",
+    "user_display_name": "`{user.displayName}` - User display name",
+    "member_nickname": "`{member.nickname}` - Server nickname",
+    "member_joined_at": "`{member.joinedAt}` - Join date",
+    "member_roles": "`{member.roles}` - Number of roles",
+    "server_name": "`{server.name}` - Server name",
+    "server_members": "`{server.members}` - Member count",
+    "server_id": "`{server.id}` - Server ID",
+    "server_icon": "`{server.icon}` - Server icon URL"
+  },
+  "example": "Welcome {user} to {server.name}! We now have {server.members} members."
+}

@@ -1,0 +1,31 @@
+{
+  "name": "variables",
+  "description": "Mostrar todas las variables disponibles para mensajes personalizados",
+  "option_preview": "Mostrar una vista previa con tus datos actuales",
+  "title": "📝 Variables Disponibles",
+  "example_title": "💡 Ejemplo",
+  "preview_title": "🔍 Vista Previa",
+  "footer": "Usa estas variables en mensajes de bienvenida, despedida y embeds personalizados",
+  "categories": {
+    "user": "**Variables de Usuario:**",
+    "member": "**Variables de Miembro:**",
+    "server": "**Variables de Servidor:**"
+  },
+  "list": {
+    "user_mention": "`{user}` - Menciona al usuario",
+    "user_name": "`{user.name}` - Nombre del usuario",
+    "user_username": "`{user.username}` - Nombre de usuario",
+    "user_tag": "`{user.tag}` - Tag del usuario (username#0000)",
+    "user_id": "`{user.id}` - ID del usuario",
+    "user_avatar": "`{user.avatar}` - URL del avatar",
+    "user_display_name": "`{user.displayName}` - Nombre de visualización",
+    "member_nickname": "`{member.nickname}` - Apodo en el servidor",
+    "member_joined_at": "`{member.joinedAt}` - Fecha de unión",
+    "member_roles": "`{member.roles}` - Cantidad de roles",
+    "server_name": "`{server.name}` - Nombre del servidor",
+    "server_members": "`{server.members}` - Cantidad de miembros",
+    "server_id": "`{server.id}` - ID del servidor",
+    "server_icon": "`{server.icon}` - URL del ícono del servidor"
+  },
+  "example": "¡Bienvenido {user} a {server.name}! Ahora somos {server.members} miembros."
+}
