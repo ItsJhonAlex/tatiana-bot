@@ -27,6 +27,7 @@ export const client = new SapphireClient({
       fallbackLng: config.app.defaultLanguage,
       supportedLngs: ['en-US', 'es-ES'],
       defaultNS: 'common',
+      ns: ['common', 'ping', 'language', 'embed', 'variables'],
       interpolation: {
         escapeValue: false
       }
