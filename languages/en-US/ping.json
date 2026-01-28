@@ -1,0 +1,10 @@
+{
+  "name": "ping",
+  "description": "Check the bot latency",
+  "response": "🏓 Pong! Latency: {{latency}}ms | API: {{apiLatency}}ms",
+  "status": {
+    "excellent": "Excellent",
+    "good": "Good",
+    "slow": "Slow"
+  }
+}
