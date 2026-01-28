@@ -1,0 +1,7 @@
+{
+  "name": "language",
+  "description": "Configurar el idioma del servidor",
+  "option_language": "El idioma a establecer para este servidor",
+  "success": "¡Idioma del servidor actualizado a {{language}}!",
+  "error": "No se pudo actualizar el idioma del servidor. Por favor intenta de nuevo."
+}
