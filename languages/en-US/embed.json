@@ -1,0 +1,53 @@
+{
+  "name": "embed",
+  "description": "Create and manage custom embeds",
+  "subcommands": {
+    "create": {
+      "name": "create",
+      "description": "Create a new embed (opens a form)",
+      "option_name": "Embed name"
+    },
+    "show": {
+      "name": "show",
+      "description": "Display a saved embed",
+      "option_name": "Embed name"
+    },
+    "list": {
+      "name": "list",
+      "description": "List all saved embeds"
+    },
+    "delete": {
+      "name": "delete",
+      "description": "Delete a saved embed",
+      "option_name": "Embed name"
+    }
+  },
+  "modal": {
+    "title": "Create Embed: {{name}}",
+    "fields": {
+      "title": "Embed Title",
+      "description": "Embed Description",
+      "color": "Color (hex: #FF0000)",
+      "color_placeholder": "#5865F2",
+      "image": "Image URL",
+      "image_placeholder": "https://example.com/image.png",
+      "footer": "Footer Text"
+    }
+  },
+  "messages": {
+    "created": "✅ Embed `{{name}}` created successfully!",
+    "deleted": "✅ Embed `{{name}}` deleted successfully.",
+    "not_found": "Embed `{{name}}` not found.",
+    "no_embeds": "No embeds found for this server.",
+    "list_title": "**Saved Embeds ({{count}})**",
+    "validation": {
+      "title_or_description": "You must provide at least a title or description for the embed.",
+      "invalid_color": "Invalid color format. Use hex format like #FF0000"
+    },
+    "errors": {
+      "create_failed": "Failed to create embed: {{error}}",
+      "delete_failed": "Failed to delete embed: {{error}}",
+      "list_failed": "Failed to list embeds: {{error}}"
+    }
+  }
+}

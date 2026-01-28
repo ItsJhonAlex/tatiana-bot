@@ -1,0 +1,53 @@
+{
+  "name": "embed",
+  "description": "Crear y gestionar embeds personalizados",
+  "subcommands": {
+    "create": {
+      "name": "create",
+      "description": "Crear un nuevo embed (abre un formulario)",
+      "option_name": "Nombre del embed"
+    },
+    "show": {
+      "name": "show",
+      "description": "Mostrar un embed guardado",
+      "option_name": "Nombre del embed"
+    },
+    "list": {
+      "name": "list",
+      "description": "Listar todos los embeds guardados"
+    },
+    "delete": {
+      "name": "delete",
+      "description": "Eliminar un embed guardado",
+      "option_name": "Nombre del embed"
+    }
+  },
+  "modal": {
+    "title": "Crear Embed: {{name}}",
+    "fields": {
+      "title": "Título del Embed",
+      "description": "Descripción del Embed",
+      "color": "Color (hex: #FF0000)",
+      "color_placeholder": "#5865F2",
+      "image": "URL de la Imagen",
+      "image_placeholder": "https://ejemplo.com/imagen.png",
+      "footer": "Texto del Footer"
+    }
+  },
+  "messages": {
+    "created": "✅ Embed `{{name}}` creado exitosamente!",
+    "deleted": "✅ Embed `{{name}}` eliminado exitosamente.",
+    "not_found": "Embed `{{name}}` no encontrado.",
+    "no_embeds": "No se encontraron embeds para este servidor.",
+    "list_title": "**Embeds Guardados ({{count}})**",
+    "validation": {
+      "title_or_description": "Debes proporcionar al menos un título o descripción para el embed.",
+      "invalid_color": "Formato de color inválido. Usa formato hex como #FF0000"
+    },
+    "errors": {
+      "create_failed": "Error al crear el embed: {{error}}",
+      "delete_failed": "Error al eliminar el embed: {{error}}",
+      "list_failed": "Error al listar los embeds: {{error}}"
+    }
+  }
+}
